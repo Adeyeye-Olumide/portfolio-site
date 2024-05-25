@@ -111,7 +111,7 @@ function App() {
     const optionsElement = document.querySelector('.options')
     const lower = document.querySelector('.lower')
 
-    lower.style.display = 'flex'
+    // lower.style.display = 'flex'
 
     element.addEventListener('click', buttonHandler)
     optionsElement.addEventListener('click', homebuttonHandler)
