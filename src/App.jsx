@@ -109,6 +109,9 @@ function App() {
   useEffect(()=> {
     const element = document.querySelector('.enter')
     const optionsElement = document.querySelector('.options')
+    const lower = document.querySelector('.lower')
+
+    lower.style.display = 'block'
 
     element.addEventListener('click', buttonHandler)
     optionsElement.addEventListener('click', homebuttonHandler)
@@ -167,7 +170,7 @@ function App() {
 
       </div>
 
-      <div className='lower'> 
+      <div className='lower' style={{display: 'none'}}> 
         <div className="greater">
           <div className='first-section'>
             <div className="first-title">
