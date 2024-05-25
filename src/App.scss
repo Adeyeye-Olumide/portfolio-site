@@ -133,6 +133,7 @@
     }
 
     .lower {
+        display: none;
         position: absolute;
         height: 90%;
         width: 100%;
@@ -140,7 +141,7 @@
         z-index: 1;
         top: 10%;
         color: rgba(255, 255, 255, 0.63);
-        display: flex;
+        // display: flex;
         flex-direction: column;
         gap: 40px;
         overflow-y: scroll;
