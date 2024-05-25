@@ -121,7 +121,7 @@ function App() {
     let timerId = setTimeout(()=> {
       lower.style.display = 'flex'
       clearTimeout(timerId)
-    }, 900)
+    }, 2000)
 
 
   }, [])
