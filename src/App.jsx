@@ -110,8 +110,7 @@ function App() {
     const element = document.querySelector('.enter')
     const optionsElement = document.querySelector('.options')
     const lower = document.querySelector('.lower')
-
-    // lower.style.display = 'flex'
+    
 
     element.addEventListener('click', buttonHandler)
     optionsElement.addEventListener('click', homebuttonHandler)
@@ -119,12 +118,15 @@ function App() {
     window.addEventListener('keydown', keypressHandler)
    
 
-
+    let timerId = setTimeout(()=> {
+      lower.style.display = 'flex'
+      clearTimeout(timerId)
+    }, 900)
 
 
   }, [])
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: "url(pexel.jpg)" }}>
         <header className="App-header">
           <h5>Elysium</h5>
 
@@ -141,7 +143,7 @@ function App() {
          
           
         </header>
-      <div className='upper'>
+      <div className='upper' style={{backgroundImage: "url(pexel.jpg)"}}>
 
         <div className="content">
 
